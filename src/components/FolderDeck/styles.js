@@ -1,0 +1,118 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+const CARD_WIDTH = width / 2 - 24;
+
+export const styles = StyleSheet.create({
+  container: {
+    width: CARD_WIDTH,
+    height: 180,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    marginBottom: 16,
+    marginHorizontal: 6,
+    overflow: 'hidden',
+    shadowColor: '#5C2B8F',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    elevation: 6,
+    position: 'relative',
+    borderWidth: 1,
+    borderColor: '#F0E5F7',
+  },
+  containerPressed: {
+    transform: [{ scale: 0.96 }],
+    shadowOpacity: 0.15,
+    borderColor: '#CB48DF80',
+    backgroundColor: '#FCFAFF',
+  },
+  imageContainer: {
+    width: '100%',
+    height: 100,
+    position: 'relative',
+    overflow: 'hidden',
+  },
+  image: {
+    width: '100%',
+    height: '100%',
+  },
+  gradient: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '100%',
+  },
+  iconContainer: {
+    position: 'absolute',
+    top: 8,
+    left: 8,
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: '#CB48DF',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cardCounter: {
+    position: 'absolute',
+    bottom: 8,
+    right: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderRadius: 12,
+  },
+  cardCountText: {
+    color: '#FFF',
+    fontSize: 12,
+    fontWeight: '600',
+    marginLeft: 4,
+  },
+  infoContainer: {
+    padding: 12,
+  },
+  deckName: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: '#333',
+    marginBottom: 6,
+  },
+  creatorContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: '5%',
+  },
+  creatorAvatar: {
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    backgroundColor: '#F2E5F7',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 6,
+  },
+  creatorInitial: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#CB48DF',
+  },
+  creatorName: {
+    fontSize: 12,
+    color: '#777',
+  },
+  tapIndicator: {
+    position: 'absolute',
+    bottom: 12,
+    right: 12,
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: '#F2E5F7',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});

@@ -1,0 +1,73 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 24,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 16,
+    margin: 16,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  iconContainer: {
+    width: 100,
+    height: 100,
+    borderRadius: 60,
+    backgroundColor: "#FCE8FF",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 24,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: "700",
+    color: "#212121",
+    marginBottom: 12,
+    textAlign: "center",
+  },
+  description: {
+    fontSize: 16,
+    color: "#666",
+    textAlign: "center",
+    marginBottom: 24,
+    lineHeight: 24,
+  },
+  tipsContainer: {
+    width: "100%",
+    marginBottom: 30,
+  },
+  tipItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 16,
+    paddingHorizontal: 8,
+  },
+  tipText: {
+    fontSize: 15,
+    color: "#555",
+    marginLeft: 12,
+    flex: 1,
+  },
+  addButton: {
+    backgroundColor: "#CB48DF",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    borderRadius: 30,
+    width: "90%",
+  },
+  addButtonText: {
+    color: "#FFF",
+    fontSize: 14,
+    fontWeight: "600",
+    marginLeft: 8,
+  },
+});
